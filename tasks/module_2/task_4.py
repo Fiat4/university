@@ -1,3 +1,3 @@
 a = int(input("Число: "))
 
-print(a%100//10)
+print(a % 100 // 10)

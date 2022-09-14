@@ -1,3 +1,3 @@
 a = float(input("Число: "))
 
-print(int(a*10) % 10)
+print(int(a * 10) % 10)
