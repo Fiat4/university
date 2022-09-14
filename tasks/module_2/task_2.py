@@ -1,3 +1,3 @@
 a = int(input("Число: "))
 
-print( a%10, a // 10)
+print( a%10, a // 10, sep="")
