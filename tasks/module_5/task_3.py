@@ -1,5 +1,5 @@
 start = int(input("Стартовая скорость: "))
-distance = int(input("Дистанция: "))
+distance = float(input("Дистанция: "))
 
 days = 0
 
