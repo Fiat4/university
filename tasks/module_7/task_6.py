@@ -7,6 +7,7 @@ for _ in range(int(input("Кол-во стран: "))):
 
 output: list[str] = []
 
-for _ in range(int(input("Кол-во поисков: "))): output.append(cities.get(input(), "Не найден"))
+for _ in range(int(input("Кол-во поисков: "))):
+    output.append(cities.get(input(), "Не найден"))
 
 print("\n".join(output))
