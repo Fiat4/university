@@ -3,9 +3,6 @@ words = input("Строка: ").split()
 collection: dict[str, int] = {}
 
 for word in words:
-    if word in collection:
-        print(collection[word], end=" ")
-        collection[word] += 1
-    else:
-        print(0, end=" ")
-        collection.update({word: 1})
+    cw = collection.get(word, 0)
+    print(cw, end=" ")
+    collection[word] = cw + 1
