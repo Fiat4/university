@@ -6,7 +6,6 @@ def days_in_month(month: int):
             month -= 7
         return 31 if month % 2 else 30
 
-
 month = int(input("Месяц: "))
 day = int(input("День: "))
 
