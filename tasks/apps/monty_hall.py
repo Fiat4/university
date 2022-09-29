@@ -6,13 +6,17 @@ win_with_change = 0
 win_without_change = 0
 total = 0
 
-def get_opened_door(win_door: int, choice: int) -> int:
-    for i in range(1,4):
-        if i != win_door and i != choice: return i
 
-def switch(choice, doors) -> int:
+def get_opened_door(win_door: int, choice: int) -> int:
+    for i in range(1, 4):
+        if i != win_door and i != choice:
+            return i
+
+
+def switch(choice: int, doors:list[int]) -> int:
     doors.remove(choice)
     return doors[0]
+
 
 while total < COUNT:
     total += 1
