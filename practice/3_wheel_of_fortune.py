@@ -1,5 +1,6 @@
 import os
 import random
+from sqlite3 import SQLITE_DROP_VIEW
 
 SQUARE = "\u25A0"
 words = ["книга", "слово"]
@@ -30,6 +31,9 @@ def game(word: str, lives: int) -> None:
         for idx in idxs:
             frame[idx] = guess
 
+        if SQUARE not in frame:
+            print("Вы победили! Приз в студию!")
+            break
 
 clear()
 print("Добро пожаловать на поле чудес!")
