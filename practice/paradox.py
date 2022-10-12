@@ -23,6 +23,8 @@ def get_opened_door(win_door: int, choice: int) -> int:
     for i in range(1, 4):
         if i != win_door and i != choice:
             return i
+        
+
 
 
 def switch(choice: int, doors:list[int]) -> int:
