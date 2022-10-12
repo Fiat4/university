@@ -19,7 +19,7 @@ def normalize_phone(phone: str) -> str:
         return f"+7{clean[1:]}"
     else:
         # Номер, вероятно, не российский
-        return clean
+        return clean if clean[0] == "+" else f"+{clean}"
 
 
 def add_contact(phone_book: dict[str, str]) -> bool:
