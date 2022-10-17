@@ -1,6 +1,5 @@
 import os
 import random
-from sqlite3 import SQLITE_DROP_VIEW
 
 SQUARE = "\u25A0"
 words = ["книга", "слово"]
