@@ -8,7 +8,7 @@ while (number := int(input("Число: "))) != 0:
     else:
         if top < count:
             top = count
-        count = 0
+        count = 1
     last = number
 
-print(max(top, count + 1 if count else count))
+print(max(top, count))
