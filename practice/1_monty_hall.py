@@ -13,7 +13,7 @@ def get_opened_door(win_door: int, choice: int) -> int:
             return i
 
 
-def switch(choice: int, doors:list[int]) -> int:
+def switch(choice: int, doors: list[int]) -> int:
     doors.remove(choice)
     return doors[0]
 
@@ -33,7 +33,7 @@ while total < COUNT:
             win_with_change += 1
 
 print(
-f"""Всего дверей открыто:{total}
+    f"""Всего дверей открыто:{total}
 Шанс победы не меняя выбор: {win_without_change/total * 100}%
 Выбор менялся: {win_with_change/total * 100}%"""
 )

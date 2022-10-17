@@ -1,5 +1,7 @@
-import random 
+import random
+
 DAYS = 365
+
 
 def birthday(iterations, count):
 
@@ -14,29 +16,26 @@ def birthday(iterations, count):
         else:
             ok += 1
 
-
-    return  f"""Всего итераций:{iterations}
+    return f"""Всего итераций:{iterations}
 Парадокс произошел в : {paradoxed/iterations * 100}%
 Всё интиутивно: {ok/iterations * 100}%"""
+
 
 def get_opened_door(win_door: int, choice: int) -> int:
     for i in range(1, 4):
         if i != win_door and i != choice:
             return i
-        
 
 
-
-def switch(choice: int, doors:list[int]) -> int:
+def switch(choice: int, doors: list[int]) -> int:
     doors.remove(choice)
     return doors[0]
 
-def monty_hall(iterations):
 
+def monty_hall(iterations):
 
     win_with_change = 0
     win_without_change = 0
-
 
     for _ in range(iterations):
         doors = [1, 2, 3]
@@ -50,7 +49,7 @@ def monty_hall(iterations):
             choice = switch(choice, doors)
             if choice == win_door:
                 win_with_change += 1
-            
+
     return f"""Всего дверей открыто:{iterations}
 Шанс победы не меняя выбор: {win_without_change/iterations * 100}%
 Выбор менялся: {win_with_change/iterations * 100}%"""
