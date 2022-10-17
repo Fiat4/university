@@ -1,6 +1,3 @@
-from cgitb import reset
-
-
 def open_file(filename: str):
     opened = False
     try:
