@@ -17,7 +17,8 @@ def open_file(filename: str):
         print(f"Неопознанная ошибка! {type(e)}, {e=}")
 
     finally:
-        if opened: file.close()
+        if opened:
+            file.close()
 
 
 while filename := input("Введите название файла: "):
