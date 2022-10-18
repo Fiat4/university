@@ -12,7 +12,8 @@ def get_books(name: str) -> list[tuple[str, str, str, int, float]]:
 def get_totals(books: list[tuple[str, str, str, int, float]]) -> list[tuple[str, float]]:
     response = []
     for book in books:
-        response.append((book[0], book[3]*book[4]))
+        price = book[3]*book[4]
+        response.append((book[0], price if price >= 500 else price + 100 ))
     return response
 
 print(get_totals(get_books("sample")))
