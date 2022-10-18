@@ -7,7 +7,7 @@ def read_file(filename: str) -> set[str]:
     return words
 
 
-def save_file(filename: str, words: set[str]) -> None:
+def save_file(filename: str, words: list[str]) -> None:
     with open(filename, "w", encoding="utf-8") as f:
         f.write(f"Всего уникальных слов: {len(words)}\n")
         f.write("=====================\n")
