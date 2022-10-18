@@ -6,7 +6,7 @@ SEARCH = re.compile(
 
 with open("data/journal.txt", "r", encoding="utf-8") as s:
     with open("data/cleanjournal.txt", "w", encoding="utf-8") as d:
-        while line := s.readline():
+        for line in s:
             results = re.search(SEARCH, line)
             if results:
                 d.write(
