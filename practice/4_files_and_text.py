@@ -1,8 +1,8 @@
 def read_file(filename: str) -> set[str]:
     words = set()
+    translation = str.maketrans(dict.fromkeys(map(ord, ".,!:?"), None))
     with open(filename, "r", encoding="utf-8") as f:
         while line := f.readline():
-            translation = str.maketrans(dict.fromkeys(map(ord, ".,!:?"), None))
             [words.add(word.lower().translate(translation)) for word in line.split()]
     return words
 
