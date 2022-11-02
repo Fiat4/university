@@ -45,13 +45,14 @@ def runner(lives, words) -> None:
     record = 0
     while True:
         result = game(words.pop(random.randint(0, len(words) - 1)), lives)
-
         if not result:
             writer.check_and_write_record(record)
             record = 0
         else:
             record += 1
-
+            
+        print(f"Угадано подряд слов: {record}")
+        
         if not words:
             print(
                 "У меня кончились слова, поэтому я не буду вам даже предлагать сыграть повторно. Вы меня обыграли уже"
