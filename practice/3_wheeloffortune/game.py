@@ -16,7 +16,8 @@ def game(word: str, lives: int) -> bool:
     while lives > 0:
         print(f"{''.join(frame)} | ❤x{lives}")
         guess = input("Введите букву или слово целиком: ").lower()
-        if guess == "c": return True
+        if guess == "c":
+            return True
         if guess == word:
             print("Вы победили! Приз в студию!")
             return True
@@ -61,7 +62,7 @@ def runner(lives, words) -> None:
             print("Очень жаль! До встречи")
             break
         clear()
-        
+
     writer.check_and_write_record(record)
 
 

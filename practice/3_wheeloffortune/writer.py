@@ -1,8 +1,6 @@
-import os
 from pathlib import Path
 
-
-package_path = Path(os.path.dirname(os.path.abspath(__file__)))
+package_path = Path(__file__).parent.resolve()
 
 
 def get_words(filename: str = str(package_path / "words.txt")) -> list[str]:
@@ -10,7 +8,7 @@ def get_words(filename: str = str(package_path / "words.txt")) -> list[str]:
     words: list[str] = []
     with open(filename, "r", encoding="utf-8") as f:
         for line in f:
-            [words.append (word.strip()) for word in line.split(",")]
+            [words.append(word.strip()) for word in line.split(",")]
     return words
 
 
