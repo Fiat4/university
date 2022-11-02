@@ -4,7 +4,6 @@ package_path = Path(__file__).parent.resolve()
 
 
 def get_words(filename: str = str(package_path / "words.txt")) -> list[str]:
-    print()
     words: list[str] = []
     with open(filename, "r", encoding="utf-8") as f:
         for line in f:
@@ -16,10 +15,7 @@ def get_record(filename: str = str(package_path / "record.txt")) -> int:
     try:
         with open(filename, "r", encoding="utf-8") as f:
             return int(f.readline())
-
-    except FileNotFoundError:
-        return 0
-    except ValueError:
+    except (FileNotFoundError, ValueError):
         return 0
 
 
