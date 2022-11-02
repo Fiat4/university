@@ -28,9 +28,9 @@ def write_record(
 
 def check_and_write_record(
     record: int, filename: str | Path = package_path / "record.txt"
-) -> int:
+) -> bool:
     current_record = get_record(filename)
     if record > current_record:
         write_record(record, filename)
-        return record
-    return current_record
+        return True
+    return False

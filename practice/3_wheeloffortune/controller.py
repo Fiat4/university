@@ -11,13 +11,13 @@ def runner(lives, words) -> None:
     record = 0
     while True:
         result = game(words.pop(random.randint(0, len(words) - 1)), lives)
+        
         if not result:
-            writer.check_and_write_record(record)
+            if writer.check_and_write_record(record): print("Вы побили рекорд! Угадано слов {record}")
             record = 0
         else:
             record += 1
-
-        print(f"Угадано подряд слов: {record}")
+            print(f"Угадано подряд слов: {record} | Рекорд: {writer.get_record()}")
 
         if not words:
             print(
@@ -30,7 +30,7 @@ def runner(lives, words) -> None:
             break
         clear()
 
-    writer.check_and_write_record(record)
+    if writer.check_and_write_record(record): print("Вы побили рекорд! Угадано слов {record}")
 
 
 def menu() -> None:

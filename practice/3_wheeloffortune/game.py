@@ -12,8 +12,6 @@ def game(word: str, lives: int) -> bool:
     while lives > 0:
         print(f"{''.join(frame)} | ❤x{lives}")
         guess = input("Введите букву или слово целиком: ").upper()
-        if guess == "c":
-            return True
         if guess == word.upper():
             print("Вы победили! Приз в студию!")
             return True
