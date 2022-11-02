@@ -8,16 +8,15 @@ def clear():
 
 
 def runner(lives, words) -> None:
-    record = 0
+    record = writer.get_record()
+    print(f"Прошлый рекорд: {record}")
+    guessed = 0
+
     while True:
         result = game(words.pop(random.randint(0, len(words) - 1)), lives)
-        
-        if not result:
-            if writer.check_and_write_record(record): print("Вы побили рекорд! Угадано слов {record}")
-            record = 0
-        else:
-            record += 1
-            print(f"Угадано подряд слов: {record} | Рекорд: {writer.get_record()}")
+
+        if result:
+            guessed += 1
 
         if not words:
             print(
@@ -28,9 +27,14 @@ def runner(lives, words) -> None:
         if not input("Желаете ли сыграть ещё раз? [y/n]: ").lower() in ["y", "д"]:
             print("Очень жаль! До встречи")
             break
+
         clear()
 
-    if writer.check_and_write_record(record): print("Вы побили рекорд! Угадано слов {record}")
+    if guessed > record:
+        writer.write_record(guessed)
+        print(f"Вы отгадали {guessed} слов(а), установив новый рекорд")
+    else:
+        print(f"Вы отгадали {guessed} слов, но рекорд равен {record}")
 
 
 def menu() -> None:
