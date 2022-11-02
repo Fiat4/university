@@ -35,4 +35,3 @@ def game(word: str, lives: int) -> bool:
             return True
 
     return False
-

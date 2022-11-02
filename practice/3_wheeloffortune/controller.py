@@ -5,8 +5,8 @@ from . import game, writer
 
 def clear():
     os.system("cls")
-    
-    
+
+
 def runner(lives, words) -> None:
     record = 0
     while True:
@@ -16,9 +16,9 @@ def runner(lives, words) -> None:
             record = 0
         else:
             record += 1
-            
+
         print(f"Угадано подряд слов: {record}")
-        
+
         if not words:
             print(
                 "У меня кончились слова, поэтому я не буду вам даже предлагать сыграть повторно. Вы меня обыграли уже"
