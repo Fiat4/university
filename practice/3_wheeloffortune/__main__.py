@@ -1,4 +1,3 @@
-from .game import game
-from .controller import menu, runner
+from .controller import menu
 
 menu()
