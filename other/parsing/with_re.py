@@ -6,7 +6,7 @@ MAX = 6
 
 card_re = re.compile(r"org-widget__in[\w\W]*?widgets-list__item")
 info_re = re.compile(
-    r'__in">[\W\w]*?title-link">([\W\w]*?)<[\W\w]*?\s*[\W\w]*?location">\s*([А-я,. 0-9]*)[\W\w]*?(?:spec__value">([0-9 + (),-]*)<\/dd>[\W\w]*?)?spec__value">([\W\w]*?)<'
+    r'__in">[\W\w]*?title-link">([\W\w]*?)<[\W\w]*?location">\s*([А-я,\-  .0-9]*)[\W\w]*?(?:spec__value">([0-9 + (),-]*)<\/dd>[\W\w]*?)?spec__value">([\W\w]*?)<'
 )
 
 
