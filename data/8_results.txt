@@ -1,0 +1,136 @@
+я | . | 14
+что | what | 10
+не | not | 9
+это | is | 8
+вы | vy | 5
+в | in | 4
+перевоспитаться | переспитаться | 4
+ли | Lee | 4
+и | And | 4
+с | p. | 4
+ты | ration | 3
+знать | Aristocracy | 3
+понимать | to understand | 3
+для | for | 3
+просто | Simple | 3
+хотеть | want | 3
+сожалеть | Regret | 3
+этот | this... | 3
+нет | none | 2
+почему | why | 2
+из | from | 2
+как | as | 2
+иметь | have | 2
+но | но | 2
+слово | Word | 2
+тот | Thoth | 2
+который | which the | 2
+хороший | Good | 2
+о | about | 2
+а | а | 2
+потому | because | 2
+должный | Due | 2
+себя | it | 2
+когда | when | 2
+они | Oni | 2
+к | к | 2
+он | ?? | 2
+мочь | might | 2
+только | only | 2
+да | yes | 2
+ненавидеть | hate | 2
+человек | persons | 2
+континуум | Continuum | 2
+верить | believe | 1
+судьба | Destiny | 1
+нео | нео... | 1
+неприятно | Неприятно. | 1
+думать | think | 1
+манипулировать | Manipulate. | 1
+эллис | Ellis Island | 1
+бойда | boyda | 1
+рэддинга | redding | 1
+отсидеть | отсидеть | 1
+год | year | 1
+ваш | yours | 1
+пожизненный | lifelong learning certificate | 1
+заключение | Conclusion | 1
+считать | very long time | 1
+понятие | Concept | 1
+значит | so | 1
+готовый | ready | 1
+вернуться | go back | 1
+общество | Company | 1
+сынок | Сынок | 1
+там | over there | 1
+политик | politician | 1
+мир | world | 1
+такой | so | 1
+молодой | young | 1
+хотеться | want | 1
+спокойный | serene | 1
+работа | work | 1
+костюм | Suit | 1
+действительно | really, | 1
+сделать | todo | 1
+проходить | undergo | 1
+день | day | 1
+чтобы | the | 1
+здесь | here | 1
+вспоминать | to remember | 1
+прошлый | last | 1
+быть | be | 1
+глупый | silly | 1
+мальчишка | BOY | 1
+совершить | Commit | 1
+ужасный | horrible | 1
+преступление | Crime | 1
+поговорить | to chat. | 1
+объяснить | explain | 1
+вправить | adjust | 1
+мозг | brain | 1
+парень | boyfriend | 1
+давно | days ago | 1
+остаться | stay on the runway | 1
+старик | old man | 1
+жить | Ikiru | 1
+до | before | 1
+смерть | вестник | 1
+дерьмовый | crappy | 1
+тоже | the same | 1
+неловкий | неловкий | 1
+молчание | Silence | 1
+обязательно | required | 1
+нужно | necessary than what you need for this | 1
+сморозить | сморозить | 1
+какуюнибудь | any | 1
+чушь | galimatias | 1
+лишь | only | 1
+бы | would | 1
+почувствовать | Feel | 1
+свой | its own | 1
+тарелка | plate | 1
+вопрос | question | 1
+тогда | then | 1
+найти | find | 1
+понастоящий | on the present | 1
+особенный | special | 1
+заткнуться | заккнуться | 1
+на | on | 1
+минута | a minute | 1
+наслаждение | pleasure | 1
+разделить | Split | 1
+тишина | Silence | 1
+док | doc. | 1
+же | Ge | 1
+всё | Everything | 1
+разговор | Dialogue | 1
+нельзя | is not acceptable either. | 1
+менять | to change | 1
+будущее | future | 1
+про | on | 1
+пространственновременный | spatial simultaneous | 1
+подумать | Think | 1
+ну | well | 1
+черта | Line
+do | 1
